@@ -16,7 +16,7 @@ from torch.utils.tensorboard import SummaryWriter
 # Tensorboard : set path
 path = 'runs/Light_upper1500_faces400_res50_Exp_Schedular0.99_Wd5e-6'
 writer = SummaryWriter(path)
-# --
+# ---------------------- #
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 num_classes = 400
@@ -60,16 +60,16 @@ img_grid = torchvision.utils.make_grid(images)
 # matplotlib_imshow(img_grid, one_channel=True)
 writer.add_image('face_images', img_grid)
 
-# --
+# ---------------------- #
 
 ''' define model'''
 
 model = models.resnet50()
 model.fc = nn.Linear(2048  , 512)
-model.load_state_dict(torch.load(path +'.pth'))
+#model.load_state_dict(torch.load(path +'.pth'))
 model.to(device)
 margin = ArcMarginProduct(in_feature=512,out_feature=num_classes)
-margin.load_state_dict(torch.load(path+'Margin.pth'))
+#margin.load_state_dict(torch.load(path+'Margin.pth'))
 margin.to(device)
 nomargin = ArcMarginForTest(in_feature=512,out_feature=num_classes)
 
@@ -78,7 +78,7 @@ nomargin = ArcMarginForTest(in_feature=512,out_feature=num_classes)
 writer.add_graph(margin, (model(images.to(device)),labels.to(device)))
 writer.close()
 classes = tuple([x for x in range(0,num_classes)])
-# --
+# ---------------------- #
 
 # Tensorboard : projector 생성
 data_list = torch.empty(0)
@@ -107,9 +107,8 @@ writer.add_embedding(features,
                     metadata=class_labels,
                     label_img=images)
 writer.close()
-#--
+# ---------------------- #
 
-# ================================================================== #
 criterion = nn.CrossEntropyLoss().to(device)
 optimizer = torch.optim.Adam([
     {'params': model.parameters(), 'weight_decay': 5e-6},
@@ -145,7 +144,7 @@ if __name__ == '__main__':
                 writer.add_scalar('training loss',
                             loss.item(),
                             epoch * len(train_loader) + i)
-# --
+# ---------------------- #
             # Print Loss for Tracking Training
             if (i+1) % 1 == 0:
                 print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(epoch+1, num_epochs, i+1, total_step, loss.item()))
