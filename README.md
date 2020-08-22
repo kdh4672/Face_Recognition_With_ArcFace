@@ -1,5 +1,5 @@
 # Face_Recognition_With_ArcFace
-- Updated : 2020-08-15 
+- ## Updated : 2020-08-15 
 - TODO : ArcFace Loss implementation
 - Code Reference: [[Repo1](https://github.com/TreB1eN/InsightFace_Pytorch)], [[Repo2](https://github.com/ronghuaiyang/arcface-pytorch)] ,*[[Repo3](https://github.com/wujiyang/Face_Pytorch)]
 - ArcFace Paper Review : [[ArcFace](https://github.com/kdh4672/DH_Lab/blob/master/Paper_Review/Arcface.pdf)]
@@ -12,7 +12,7 @@
 
 
 
-- Updated : 2020-08-22
+- ## Updated : 2020-08-22
 - TODO : Upgrade Face recognition performance
 - What's New : Extract Featrues'degree Compared to Center, and the second nearest degree, Apply Thresh Hold at degree 30
 - Model is Trained with Three class people
