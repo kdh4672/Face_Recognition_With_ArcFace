@@ -1,4 +1,5 @@
 # Face_Recognition_With_ArcFace
+- Update : 2020-08-22
 - TODO : Upgrade Face recognition performance
 - What's New : Extract Featrues'degree Compared to Center, and the second nearest degree, Apply Thresh Hold at degree 30
 - Model is Trained with Three class people
