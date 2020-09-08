@@ -22,4 +22,11 @@
 - June Result:
 
 ![June_Output](https://user-images.githubusercontent.com/54311546/90952358-f6cf4a80-e49d-11ea-8ec7-8deacfdae78a.gif)
-- Sim Result: Comming soon..
+- Sim Result:
+
+![output_sim](https://user-images.githubusercontent.com/54311546/92383637-aa486800-f149-11ea-9c24-0bb817e408c4.gif)
+
+
+- Three People:
+
+![output](https://user-images.githubusercontent.com/54311546/92383726-d19f3500-f149-11ea-886c-e5c305c9fad6.gif)
