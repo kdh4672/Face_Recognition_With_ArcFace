@@ -30,3 +30,13 @@
 - Three People:
 
 ![output](https://user-images.githubusercontent.com/54311546/92383726-d19f3500-f149-11ea-886c-e5c305c9fad6.gif)
+
+
+- ## Updated : 2020-09-09
+- TODO: Test Open-Set Recognition
+- If angle between Centre and Feature of Input image is larger than 40, Output is 'Unknown'
+
+- Kim is not enrolled in gallery (403 IDs are enrolled in gallery), So Kim is New ID who was not trained.
+
+![HS_Output](https://user-images.githubusercontent.com/54311546/92565133-2ca16b00-f2b5-11ea-898f-0276e3d6d1f9.gif)
+
