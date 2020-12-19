@@ -40,3 +40,8 @@
 
 ![HS_Output](https://user-images.githubusercontent.com/54311546/92565133-2ca16b00-f2b5-11ea-898f-0276e3d6d1f9.gif)
 
+- ## Updated : 2020-11-30
+- TODO: Face Data Augmentation
+- Used: [[DepthNet](https://github.com/kdh4672/DepthNets)]
+- Result (Train Face Recognition With Augmented Data) : Not good, should be more developed
+- Link: [[Augmented Face](https://github.com/kdh4672/face_augment)]
