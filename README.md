@@ -6,7 +6,7 @@
 - Presentation File : [[Arcface.pptx](https://github.com/kdh4672/dlstudy/files/5078083/Arcface.pptx)]
 - Test1 : Center is Kong,  Not perfect but almost
 ![result](https://user-images.githubusercontent.com/54311546/90228642-89923880-de51-11ea-9c1c-af1dea9c4466.gif)
-
+<!-- 
 
 
 - ## Updated : 2020-08-22
@@ -35,7 +35,7 @@
 
 - Kim is not enrolled in gallery (403 IDs are enrolled in gallery), that means Kim is New ID who was not trained.
 
-![HS_Output](https://user-images.githubusercontent.com/54311546/92565133-2ca16b00-f2b5-11ea-898f-0276e3d6d1f9.gif)
+![HS_Output](https://user-images.githubusercontent.com/54311546/92565133-2ca16b00-f2b5-11ea-898f-0276e3d6d1f9.gif) -->
 
 - ## Updated : 2020-11-30
 - TODO: Face Data Augmentation
